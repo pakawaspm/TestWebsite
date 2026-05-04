@@ -1,0 +1,20 @@
+{
+  "doctor": {
+    "name": { "en": "Dr. Sucheera Sarunket", "th": "พญ. สุชีรา ศรันย์เกตุ" },
+    "title": { "en": "Oculoplastic Surgeon", "th": "จักษุแพทย์เฉพาะทางศัลยกรรมตกแต่งรอบดวงตา" },
+    "credentials": { "en": "MD", "th": "พ.บ." },
+    "bio": { 
+      "en": "Dr. Sucheera Sarunket is a board-certified ophthalmologist and fellowship-trained oculoplastic surgeon. She specializes in reconstructive and cosmetic surgery of the eyelids, orbit, and tear duct system. She focuses on restoring natural function and appearance, prioritizing compassionate, personalized patient care.",
+      "th": "พญ. สุชีรา เป็นจักษุแพทย์ที่ได้รับการรับรองและผ่านการฝึกอบรมเฉพาะทางด้านศัลยกรรมตกแต่งรอบดวงตา มีความเชี่ยวชาญในการผ่าตัดเสริมสร้างและศัลยกรรมความงามของเปลือกตา เบ้าตา และระบบท่อน้ำตา โดยมุ่งเน้นที่การฟื้นฟูการทำงานและรูปลักษณ์อย่างเป็นธรรมชาติ ให้ความสำคัญกับการดูแลผู้ป่วยอย่างใส่ใจและเป็นรายบุคคล"
+    },
+    "certifications": [
+      { "en": "Thai Board of Ophthalmology", "th": "วุฒิบัตรจักษุวิทยา" },
+      { "en": "Fellowship in Oculoplastic and Reconstructive Surgery", "th": "แพทย์เฉพาะทางต่อยอดศัลยกรรมตกแต่งและเสริมสร้างรอบดวงตา" }
+    ],
+    "contact": {
+      "phone": { "en": "+1 (555) 123-4567", "th": "02-123-4567" },
+      "email": { "en": "consultations@oculosurg-portfolio.local", "th": "consultations@oculosurg-portfolio.local" },
+      "address": { "en": "1200 Medical Center Drive, Suite 400, Innovation District, Cityville", "th": "1200 อาคารศูนย์การแพทย์ ห้อง 400 เขตนวัตกรรม ซิตี้วิลล์" }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #842429;      /* Earthy Maroon */
+  --color-rosewood: #A34855;     /* Deep Rosewood */
+  --color-dusty: #CB838E;        /* Dusty Rose */
+  --color-sand: #DDCBB7;         /* Warm Sand */
+  --color-mocha: #91775B;        /* Soft Mocha */
+  --color-almond: #F7F2E9;       /* Faded Almond */
+  
+  /* Aliases for existing classes to auto-adopt the new look */
+  --color-primary-light: rgba(221, 203, 183, 0.4);
+  --color-teal-soft: rgba(247, 242, 233, 0.8);
+  --color-teal-muted: #91775B;
+  
+  /* Font Families */
+  --font-serif: var(--font-sans); /* Force serif classes to use Albert Sans Medium as requested */
+  --font-secondary: var(--font-secondary); /* Lagu Sans Fallback */
+  --font-thai-sans: "SUKHUMWIT SET", var(--font-thai), sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-thai {
+    font-family: var(--font-thai-sans);
+  }
+  .font-thai .font-sans, .font-thai.font-sans,
+  .font-thai .font-secondary, .font-thai.font-secondary,
+  .font-thai .font-serif, .font-thai.font-serif {
+    font-family: var(--font-thai-sans) !important;
+  }
+}
