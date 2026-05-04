@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "id": "case-1",
+      "title": { "en": "Upper Blepharoplasty", "th": "ศัลยกรรมเปลือกตาบน" },
+      "category": { "en": "Cosmetic", "th": "ความงาม" },
+      "description": { "en": "Patient presented with upper eyelid hooding causing heaviness and a tired appearance. Procedure performed under local anesthesia.", "th": "ผู้ป่วยมาด้วยปัญหาหนังตาบนตก ทำให้ดูหนักตาและดูเหนื่อยล้า การผ่าตัดทำภายใต้การยาชาเฉพาะที่" },
+      "beforeImage": "https://picsum.photos/seed/before1/800/600",
+      "afterImage": "https://picsum.photos/seed/after1/800/600"
+    },
+    {
+      "id": "case-2",
+      "title": { "en": "Bilateral Ptosis Repair", "th": "แก้ไขกล้ามเนื้อตาอ่อนแรงสองข้าง" },
+      "category": { "en": "Functional", "th": "เพื่อการใช้งาน" },
+      "description": { "en": "Surgical correction of significant upper lid drooping that was obstructing the superior visual field.", "th": "การผ่าตัดแก้ไขหนังตาตกอย่างมีนัยสำคัญซึ่งบดบังลานสายตาด้านบน" },
+      "beforeImage": "https://picsum.photos/seed/before2/800/600",
+      "afterImage": "https://picsum.photos/seed/after2/800/600"
+    },
+    {
+      "id": "case-3",
+      "title": { "en": "Lower Eyelid Ectropion", "th": "เปลือกตาล่างม้วนออก" },
+      "category": { "en": "Functional", "th": "เพื่อการใช้งาน" },
+      "description": { "en": "Repair of out-turned lower eyelid to resolve chronic redness, tearing, and exposure keratopathy.", "th": "แก้ไขเปลือกตาล่างที่ม้วนออกเพื่อรักษาอาการตาแดงเรื้อรัง น้ำตาไหล และภาวะกระจกตาเสียหาย" },
+      "beforeImage": "https://picsum.photos/seed/before3/800/600",
+      "afterImage": "https://picsum.photos/seed/after3/800/600"
+    },
+    {
+      "id": "case-4",
+      "title": { "en": "Quad Blepharoplasty", "th": "ศัลยกรรมเปลือกตาทั้งสี่" },
+      "category": { "en": "Cosmetic", "th": "ความงาม" },
+      "description": { "en": "Comprehensive rejuvenation of all four eyelids, addressing both upper lid skin excess and lower lid fat prolapse (bags).", "th": "การฟื้นฟูขอบตาทั้งสี่เปลือกตาอย่างครอบคลุม จัดการทั้งหนังตาบนตกและไขมันเปลือกตาล่างย้อย (ถุงใต้ตา)" },
+      "beforeImage": "https://picsum.photos/seed/before4/800/600",
+      "afterImage": "https://picsum.photos/seed/after4/800/600"
+    }
+  ]
+}
