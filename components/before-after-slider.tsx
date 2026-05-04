@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, MouseEvent as ReactMouseEvent, TouchEvent as ReactTouchEvent } from 'react';
+import { useState, useRef, useEffect, useCallback, MouseEvent as ReactMouseEvent, TouchEvent as ReactTouchEvent } from 'react';
 import Image from 'next/image';
 
 interface BeforeAfterSliderProps {
@@ -15,38 +15,33 @@ export function BeforeAfterSlider({ beforeImage, afterImage, className = "", onC
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleMove = (clientX: number) => {
-    if (!isDragging || !containerRef.current) return;
+  const handleMove = useCallback((clientX: number) => {
+    if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
     const percentage = (x / rect.width) * 100;
     setSliderPosition(percentage);
-  };
-
-  const handleMouseMove = (e: globalThis.MouseEvent) => {
-    handleMove(e.clientX);
-  };
-
-  const handleTouchMove = (e: globalThis.TouchEvent) => {
-    handleMove(e.touches[0].clientX);
-  };
+  }, []);
 
   const handleMouseUp = () => {
     setIsDragging(false);
   };
 
   useEffect(() => {
-    if (isDragging) {
-      window.addEventListener('mousemove', handleMouseMove);
-      window.addEventListener('mouseup', handleMouseUp);
-      window.addEventListener('touchmove', handleTouchMove, { passive: false });
-      window.addEventListener('touchend', handleMouseUp);
-    } else {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
-      window.removeEventListener('touchmove', handleTouchMove);
-      window.removeEventListener('touchend', handleMouseUp);
-    }
+    if (!isDragging) return;
+
+    const handleMouseMove = (e: globalThis.MouseEvent) => {
+      handleMove(e.clientX);
+    };
+
+    const handleTouchMove = (e: globalThis.TouchEvent) => {
+      handleMove(e.touches[0].clientX);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    window.addEventListener('touchend', handleMouseUp);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -54,7 +49,7 @@ export function BeforeAfterSlider({ beforeImage, afterImage, className = "", onC
       window.removeEventListener('touchmove', handleTouchMove);
       window.removeEventListener('touchend', handleMouseUp);
     };
-  }, [isDragging]);
+  }, [isDragging, handleMove]);
 
   return (
     <div 
@@ -90,7 +85,7 @@ export function BeforeAfterSlider({ beforeImage, afterImage, className = "", onC
         style={{ width: `${sliderPosition}%` }}
         onClick={onClick}
       >
-        <div className="relative w-full h-full" style={{ width: containerRef.current?.getBoundingClientRect().width || '100%' }}>
+        <div className="relative w-full h-full">
           <Image 
             src={beforeImage} 
             alt="Before" 

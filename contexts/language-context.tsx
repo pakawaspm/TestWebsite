@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'en' | 'th';
 
@@ -71,22 +71,20 @@ const translations: Record<string, Record<Language, string>> = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window === 'undefined') return 'en';
 
-  useEffect(() => {
-    // Check localStorage or browser preference on mount
     const saved = localStorage.getItem('language') as Language;
-    if (saved && (saved === 'en' || saved === 'th')) {
-      setLanguage(saved);
-    } else {
-      const isThai = navigator.language.startsWith('th');
-      setLanguage(isThai ? 'th' : 'en');
-    }
-  }, []);
+    if (saved && (saved === 'en' || saved === 'th')) return saved;
+
+    return navigator.language.startsWith('th') ? 'th' : 'en';
+  });
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem('language', lang);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', lang);
+    }
   };
 
   const t = (key: string) => {
