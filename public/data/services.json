@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "id": "blepharoplasty",
+      "title": { "en": "Blepharoplasty", "th": "ศัลยกรรมตกแต่งเปลือกตา" },
+      "category": { "en": "Cosmetic & Functional", "th": "เพื่อความงามและการใช้งาน" },
+      "description": { "en": "Eyelid surgery to remove excess skin, muscle, and occasionally fat from the upper or lower eyelids. It can improve vision obscured by drooping eyelids and provide a more rested appearance.", "th": "การผ่าตัดเปลือกตาเพื่อนำผิวหนังชั้นเกิน กล้ามเนื้อ และไขมันออกจากเปลือกตาบนหรือล่าง ช่วยเพิ่มทัศนวิสัยที่ถูกบดบังจากหนังตาตกและให้ผลลัพธ์ที่ดูสดใสขึ้น" },
+      "duration": "1 - 2 hours",
+      "recovery": "1 - 2 weeks"
+    },
+    {
+      "id": "ptosis",
+      "title": { "en": "Ptosis Repair", "th": "การผ่าตัดแก้ไขกล้ามเนื้อตาอ่อนแรง" },
+      "category": { "en": "Functional", "th": "เพื่อการใช้งาน" },
+      "description": { "en": "Surgical correction of a drooping upper eyelid that may obstruct vision. The procedure tightens the levator muscle responsible for lifting the eyelid.", "th": "การผ่าตัดแก้ไขปัญหาหนังตาตกที่อาจบดบังการมองเห็น ขั้นตอนนี้จะทำการกระชับกล้ามเนื้อที่ทำหน้าที่ยกเปลือกตา" },
+      "duration": "45 - 90 mins",
+      "recovery": "1 - 2 weeks"
+    },
+    {
+      "id": "ectropion-entropion",
+      "title": { "en": "Ectropion & Entropion Repair", "th": "การแก้ไขเปลือกตาม้วนออกและม้วนเข้า" },
+      "category": { "en": "Functional", "th": "เพื่อการใช้งาน" },
+      "description": { "en": "Correction of eyelids that turn outward (ectropion) causing irritation, or inward (entropion) causing lashes to rub against the eye. Restores proper eyelid position and protects the ocular surface.", "th": "แก้ไขเปลือกตาที่ม้วนออกซึ่งทำให้เกิดการระคายเคือง หรือม้วนเข้าซึ่งทำให้ขนตาทิ่มตา เพื่อฟื้นฟูตำแหน่งเปลือกตาให้เหมาะสมและปกป้องผิวดวงตา" },
+      "duration": "45 - 60 mins",
+      "recovery": "1 week"
+    },
+    {
+      "id": "orbital-fracture",
+      "title": { "en": "Orbital Fracture Repair", "th": "การรักษากระดูกเบ้าตาแตก" },
+      "category": { "en": "Reconstructive", "th": "ศัลยกรรมเสริมสร้าง" },
+      "description": { "en": "Surgical repair of broken facial bones surrounding the eye, often necessary to prevent double vision or a sunken appearance of the eye.", "th": "การผ่าตัดแก้ไขกระดูกใบหน้ารอบดวงตาที่แตกหัก ซึ่งจำเป็นเพื่อป้องกันการเห็นภาพซ้อนหรือดวงตายึบทะลุ" },
+      "duration": "2 - 3 hours",
+      "recovery": "2 - 4 weeks"
+    },
+    {
+      "id": "tear-duct",
+      "title": { "en": "Tear Duct Surgery (DCR)", "th": "การผ่าตัดท่อน้ำตา (DCR)" },
+      "category": { "en": "Functional", "th": "เพื่อการใช้งาน" },
+      "description": { "en": "Dacryocystorhinostomy (DCR) creates a new tear drain between the eye and nose to treat severe, chronic tearing caused by blocked tear ducts.", "th": "การผ่าตัดสร้างทางระบายน้ำตาใหม่ระหว่างดวงตากับจมูก เพื่อรักษาอาการน้ำตาไหลเรื้อรังที่เกิดจากท่อน้ำตาอุดตัน" },
+      "duration": "1 - 2 hours",
+      "recovery": "1 week"
+    },
+    {
+      "id": "brow-lift",
+      "title": { "en": "Endoscopic Brow Lift", "th": "การยกคิ้วผ่านกล้อง" },
+      "category": { "en": "Cosmetic", "th": "ความงาม" },
+      "description": { "en": "A minimally invasive procedure to elevate drooping eyebrows, often performed in conjunction with blepharoplasty for a comprehensive aesthetic rejuvenation.", "th": "การผ่าตัดเล็กเพื่อยกคิ้วที่ตก มักทำร่วมกับการทำตาสองชั้นเพื่อการฟื้นฟูความอ่อนเยาว์อย่างครอบคลุม" },
+      "duration": "1.5 - 2 hours",
+      "recovery": "1 - 2 weeks"
+    }
+  ]
+}

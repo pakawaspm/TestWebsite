@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "id": "art-1",
+      "date": "October 15, 2025",
+      "title": { "en": "Advances in Endoscopic Tear Duct Surgery", "th": "ความก้าวหน้าในการผ่าตัดท่อน้ำตาผ่านกล้อง" },
+      "summary": { "en": "Recent refinements in endoscopic DCR techniques have significantly reduced patient downtime while maintaining high success rates for epiphora (excessive tearing) relief.", "th": "การปรับปรุงเทคนิค DCR ผ่านกล้องเมื่อเร็วๆ นี้ ได้ลดเวลาพักฟื้นของผู้ป่วยลงอย่างมาก ในขณะที่ยังคงอัตราความสำเร็จสูงในการบรรเทาอาการน้ำตาไหลมากเกินไป" },
+      "link": "#"
+    },
+    {
+      "id": "art-2",
+      "date": "August 22, 2025",
+      "title": { "en": "Understanding Thyroid Eye Disease (TED)", "th": "ความเข้าใจเกี่ยวกับโรคตาจากไทรอยด์ (TED)" },
+      "summary": { "en": "A clinical overview of managing the orbital inflammation and proptosis associated with Graves' disease, from acute medical management to complex orbital decompression.", "th": "ภาพรวมทางคลินิกของการจัดการการอักเสบในเบ้าตาและตาโปนที่เกี่ยวข้องกับโรค Graves ตั้งแต่การจัดการทางการแพทย์แบบเฉียบพลันไปจนถึงการลดแรงดันเบ้าตาที่ซับซ้อน" },
+      "link": "#"
+    },
+    {
+      "id": "art-3",
+      "date": "May 10, 2025",
+      "title": { "en": "Blepharoplasty vs. Ptosis Repair", "th": "ศัลยกรรมตกแต่งเปลือกตา กับ การแก้ไขกล้ามเนื้อตาอ่อนแรง" },
+      "summary": { "en": "Educating patients on the critical anatomical differences between skin excess (dermatochalasis) and muscle weakness (ptosis), and why precise surgical planning is essential.", "th": "การให้ความรู้ผู้ป่วยเกี่ยวกับความแตกต่างทางกายวิภาคที่สำคัญระหว่างรอยหย่อนคล้อย (ผิวหนังส่วนเกิน) และกล้ามเนื้ออ่อนแรง (หนังตาตก) และเหตุใดการวางแผนผ่าตัดที่แม่นยำจึงจำเป็นอย่างยิ่ง" },
+      "link": "#"
+    }
+  ]
+}
